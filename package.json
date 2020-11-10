@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "jquery": "^3.5.1",
-    "pagepiling.js": "^1.5.6",
-    "tailwindcss": "^1.9.6"
+    "pagepiling.js": "^1.5.6"
   }
 }
