@@ -1,2 +1,6 @@
-@import "_normalize.scss";
-@import "_site.scss";
+@import "config";
+
+@import "body";
+@import "header";
+@import "content";
+@import "footer";

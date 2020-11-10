@@ -4,6 +4,9 @@ require 'slim'
 # Directory Indexes for Middleman
 activate :directory_indexes
 
+# Speed up the dev
+activate :livereload
+
 # allows use of these files With no layout
 page '/*.xml', layout: false
 page '/*.json', layout: false
