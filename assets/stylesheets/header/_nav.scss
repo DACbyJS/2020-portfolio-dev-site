@@ -8,8 +8,7 @@
 #toggle:checked {
   //Any element you need to change the style if menu is open goes here, using the sibling selector (~)
   & ~ .toggle-container .button-toggle {
-    box-shadow: 0 0 100vh 100vw rgba(2, 29, 42, 0.3),
-      inset 0 0 0 20px rgba(2, 29, 42, 0.3);
+    box-shadow: 0 0 0 100vh #021d2a;
 
     &:before {
       transform: translateY(-50%) rotate(45deg) scale(1);
@@ -28,13 +27,15 @@
 
     // Restoring nav items from 'lines' in the menu icon
     .nav-item {
-      color: $moderateAccentColor;
+      color: $white;
       letter-spacing: 0;
-      height: 40px;
+      height: 4rem;
       line-height: 40px;
+      font-size: 2rem;
       margin-top: 0;
       opacity: 1;
       transform: scaleY(1);
+      text-transform: capitalize;
       transition: $transition-duration, opacity 0.1s;
 
       // Setting delays for the nav items in open transition
@@ -63,7 +64,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 25px;
+  margin: 30px 25px 25px 25px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -107,7 +108,7 @@
 
 .nav {
   display: inline-block;
-  margin: 25px 25px 20px;
+  margin: 30px 25px 25px 20px;
   pointer-events: none;
   transition: $transition-duration;
 }
@@ -127,6 +128,9 @@
   white-space: nowrap;
   transform: scaleY(0.2);
   transition: $transition-duration, opacity 1s;
+  font-family: 'Lora';
+  font-weight: 600;
+  text-decoration: none;
 
   //Set delays for the nav items in close transition
   @for $i from 1 through $navItems {
