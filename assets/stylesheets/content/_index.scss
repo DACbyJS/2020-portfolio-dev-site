@@ -1,6 +1,8 @@
 .content {
   position: relative;
   transition: $transition-duration;
+  height: 100%;
+  z-index: 0;
 
   &:before {
     position: absolute;
@@ -14,3 +16,5 @@
     transition: $transition-duration;
   }
 }
+
+@import "multiscroll-sections/_base.scss"
