@@ -26,8 +26,10 @@
     "webpack-cli": "^4.2.0"
   },
   "dependencies": {
+    "fittext": "^1.0.1",
     "jquery": "^3.5.1",
     "jquery-ui": "^1.12.1",
+    "letteringjs": "^0.7.0",
     "multiscroll.js": "^0.2.2"
   }
 }

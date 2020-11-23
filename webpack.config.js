@@ -4,6 +4,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const webpack = require("webpack");
 
 module.exports = {
+  mode: "development",
   entry: {
     site: [
       './assets/javascripts/index.js',
@@ -41,13 +42,19 @@ module.exports = {
       }),
     ],
   },
+  resolve: {
+    alias: {
+      'jquery': path.resolve(path.join(__dirname, 'node_modules', 'jquery'))
+     },
+  },
   plugins: [
     new miniCssPlugin({
       filename: 'assets/stylesheets/[name].css'
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
-      jQuery: 'jquery'
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
     })
   ]
 }

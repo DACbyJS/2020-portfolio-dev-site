@@ -6,15 +6,52 @@ section class="content"
     div id="multiscroll"
         div class="ms-left"
             div class="ms-section"
-                == partial "partials/multiscroll-sections/hello-left"
+                = partial "partials/multiscroll-sections/multiscroll-section-template",\
+                :locals => {\
+                    :parent_container_css_class => "ms-content-container multiscroll-bg-image",\
+                    :h1_css_class => "large-title last-line-center lettering-lines",\
+                    :image_url => "./images/monogram-d.png",\
+                    :title_text => "Hello<br/> My name<br/> is Jakob Smith"\
+                }
             div class="ms-section"
-                == partial "partials/multiscroll-sections/skills-left"
+                = partial "partials/multiscroll-sections/multiscroll-section-template",\
+                :locals => {\
+                    :parent_container_css_class => "ms-content-container multiscroll-bg-image",\
+                    :h1_css_class => "large-title last-line-center",\
+                    :image_url => "./images/monogram-e.png",\
+                    :title_text => "I can<br/> code and style<br/> on a team<br/> or alone."\
+                }
             div class="ms-section"
-                == partial "partials/multiscroll-sections/rate-left"
+                = partial "partials/multiscroll-sections/multiscroll-section-template",\
+                :locals => {\
+                    :parent_container_css_class => "ms-content-container multiscroll-bg-image",\
+                    :h1_css_class => "large-title last-line-center",\
+                    :image_url => "./images/monogram-f.png",\
+                    :title_text => "I can design for<br/> and empathize with<br/> your user."\
+                }
+  
         div class="ms-right"
             div class="ms-section"
-                == partial "partials/multiscroll-sections/hello-right"
+                = partial "partials/multiscroll-sections/multiscroll-section-template",\
+                :locals => {\
+                    :parent_container_css_class => "ms-content-container multiscroll-bg-image",\
+                    :h1_css_class => "large-title last-line-center lettering-lines",\
+                    :image_url => "./images/monogram-d.png",\
+                    :title_text => "Learn More About Me"\
+                }
             div class="ms-section"
-                == partial "partials/multiscroll-sections/skills-right"
+                = partial "partials/multiscroll-sections/multiscroll-section-template",\
+                :locals => {\
+                    :parent_container_css_class => "ms-content-container multiscroll-bg-image",\
+                    :h1_css_class => "large-title last-line-center ",\
+                    :image_url => "./images/monogram-e.png",\
+                    :title_text => "See the problems I've solved"\
+                }
             div class="ms-section"
-                == partial "partials/multiscroll-sections/rate-right"
+                = partial "partials/multiscroll-sections/multiscroll-section-template",\
+                :locals => {\
+                    :parent_container_css_class => "ms-content-container multiscroll-bg-image",\
+                    :h1_css_class => "large-title last-line-center ",\
+                    :image_url => "./images/monogram-f.png",\
+                    :title_text => "See the look and feel I've created"\
+                }
