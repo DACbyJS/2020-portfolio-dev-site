@@ -22,11 +22,11 @@
     "script-loader": "^0.7.2",
     "style-loader": "^2.0.0",
     "uglify-loader": "^3.0.0",
+    "url-loader": "^4.1.1",
     "webpack": "^5.4.0",
     "webpack-cli": "^4.2.0"
   },
   "dependencies": {
-    "fittext": "^1.0.1",
     "jquery": "^3.5.1",
     "jquery-ui": "^1.12.1",
     "letteringjs": "^0.7.0",

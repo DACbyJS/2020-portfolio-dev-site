@@ -1,0 +1,23 @@
+#multiscroll.dark-blue {
+  background-color: $darkBlueSectionBg;
+  
+  .ms-content-container {
+    border-color: $darkBlueSectionAccent;
+  }
+
+  .large-title {
+    color: $darkBlueSectionText;
+  }
+
+  .monogram-multi-path-group g path {
+    fill: $darkBlueSectionAccent !important; //overrides inline fill
+  }
+
+  .monogram-multi-circle-group g circle {
+    fill: $darkBlueSectionAccent !important; //overrides inline fill
+  }
+
+  .monogram-multi-ellipse-group g ellipse {
+    fill: $darkBlueSectionAccent !important; //overrides inline fill
+  }
+}

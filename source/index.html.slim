@@ -3,55 +3,61 @@ title: Jakob Smith | Portfolio
 ---
 
 section class="content"
-    div id="multiscroll"
+    div id="multiscroll" class="dark-blue"
         div class="ms-left"
             div class="ms-section"
                 = partial "partials/multiscroll-sections/multiscroll-section-template",\
                 :locals => {\
-                    :parent_container_css_class => "ms-content-container multiscroll-bg-image",\
-                    :h1_css_class => "large-title last-line-center lettering-lines",\
-                    :image_url => "./images/monogram-d.png",\
-                    :title_text => "Hello<br/> My name<br/> is Jakob Smith"\
+                    :parent_container_css_class => "ms-content-container",\
+                    :inner_container_css_class => "ms-inner-container",\
+                    :h1_css_class => "large-title lettering-lines hello",\
+                    :image_url => "monogram-d",\
+                    :title_text => "Hello,<br/> my name is <br/> Jakob Smith"\
                 }
             div class="ms-section"
                 = partial "partials/multiscroll-sections/multiscroll-section-template",\
                 :locals => {\
-                    :parent_container_css_class => "ms-content-container multiscroll-bg-image",\
-                    :h1_css_class => "large-title last-line-center",\
-                    :image_url => "./images/monogram-e.png",\
-                    :title_text => "I can<br/> code and style<br/> on a team<br/> or alone."\
+                    :parent_container_css_class => "ms-content-container",\
+                    :inner_container_css_class => "ms-inner-container",\
+                    :h1_css_class => "large-title lettering-lines code",\
+                    :image_url => "monogram-e",\
+                    :title_text => "I can code<br/> and style<br/> with or without<br/> a team."\
                 }
             div class="ms-section"
                 = partial "partials/multiscroll-sections/multiscroll-section-template",\
                 :locals => {\
-                    :parent_container_css_class => "ms-content-container multiscroll-bg-image",\
-                    :h1_css_class => "large-title last-line-center",\
-                    :image_url => "./images/monogram-f.png",\
-                    :title_text => "I can design for<br/> and empathize with<br/> your user."\
+                    :parent_container_css_class => "ms-content-container",\
+                    :inner_container_css_class => "ms-inner-container",\
+                    :h1_css_class => "large-title lettering-lines design",\
+                    :image_url => "monogram-f",\
+                    :title_text => "I can design for<br/> and empathize with<br/> your client."\
                 }
   
         div class="ms-right"
             div class="ms-section"
                 = partial "partials/multiscroll-sections/multiscroll-section-template",\
                 :locals => {\
-                    :parent_container_css_class => "ms-content-container multiscroll-bg-image",\
-                    :h1_css_class => "large-title last-line-center lettering-lines",\
-                    :image_url => "./images/monogram-d.png",\
-                    :title_text => "Learn More About Me"\
+                    :parent_container_css_class => "ms-content-container",\
+                    :inner_container_css_class => "ms-inner-container",\
+                    :h1_css_class => "large-title lettering-lines about-me",\
+                    :image_url => "monogram-d",\
+                    :title_text => "Scroll Down<br/> to learn more<br/> about me."\
                 }
             div class="ms-section"
                 = partial "partials/multiscroll-sections/multiscroll-section-template",\
                 :locals => {\
-                    :parent_container_css_class => "ms-content-container multiscroll-bg-image",\
-                    :h1_css_class => "large-title last-line-center ",\
-                    :image_url => "./images/monogram-e.png",\
-                    :title_text => "See the problems I've solved"\
+                    :parent_container_css_class => "ms-content-container",\
+                    :inner_container_css_class => "ms-inner-container",\
+                    :h1_css_class => "large-title lettering-lines work",\
+                    :image_url => "monogram-e",\
+                    :title_text => "See the work<br/> I've done."\
                 }
             div class="ms-section"
                 = partial "partials/multiscroll-sections/multiscroll-section-template",\
                 :locals => {\
-                    :parent_container_css_class => "ms-content-container multiscroll-bg-image",\
-                    :h1_css_class => "large-title last-line-center ",\
-                    :image_url => "./images/monogram-f.png",\
-                    :title_text => "See the look and feel I've created"\
+                    :parent_container_css_class => "ms-content-container",\
+                    :inner_container_css_class => "ms-inner-container",\
+                    :h1_css_class => "large-title lettering-lines look",\
+                    :image_url => "monogram-f",\
+                    :title_text => "See the look<br/> and feel I've<br/> created."\
                 }

@@ -1,2 +1,7 @@
-div style="background-image: url(#{image_url})" class="#{parent_container_css_class}"
-    h1 class="#{h1_css_class}" #{title_text}
+div class="#{parent_container_css_class}"
+    div class="#{inner_container_css_class}"
+        = inline_svg("#{image_url}")
+        h1 class="#{h1_css_class}" #{title_text}
+
+        - if defined?(below_text_image)
+            = inline_svg("#{below_text_image}")

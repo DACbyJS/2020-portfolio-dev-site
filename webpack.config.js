@@ -24,6 +24,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: [miniCssPlugin.loader, 'css-loader']
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        use: ['url-loader?limit=100000']
       }
     ]
   },
@@ -45,7 +49,7 @@ module.exports = {
   resolve: {
     alias: {
       'jquery': path.resolve(path.join(__dirname, 'node_modules', 'jquery'))
-     },
+    },
   },
   plugins: [
     new miniCssPlugin({

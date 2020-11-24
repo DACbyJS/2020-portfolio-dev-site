@@ -5,7 +5,8 @@ $(document).ready(function () {
 	}
 
 	$('#multiscroll').multiscroll({
-		scrollingSpeed: 1500,
-		easing: 'easeOutQuint',
+		scrollingSpeed: 1000,
+		easing: 'easeOutSine',
+		paddingTop: '78px'
 	});
 });

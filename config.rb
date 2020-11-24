@@ -19,5 +19,15 @@ activate :external_pipeline,
    source: '.tmp/dist',
    latency: 1
 
+# Change our primary js/css directory for webpack/middleman combo
 config[:js_dir] = 'assets/javascripts'
 config[:css_dir] = 'assets/stylesheets'
+
+helpers do
+   def inline_svg(name)
+      root = Middleman::Application.root
+      file_path = "#{root}/source/images/#{name}.svg"
+      return File.read(file_path) if File.exists?(file_path)
+      '(not found)'
+    end
+end
