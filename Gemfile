@@ -13,3 +13,6 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw]
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
+
+# webrick
+gem 'webrick'
