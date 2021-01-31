@@ -30,3 +30,36 @@
   justify-content: center;
   align-items: center;
 }
+
+@include media("<=tablet") {
+  #multiscroll {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+    height: auto;
+    padding: 15px;
+  }
+
+  .ms-left,
+  .ms-right {
+    flex: 0 1 auto;
+    height: auto;
+  }
+
+  .ms-content-container {
+    width: auto;
+    height: 100%;
+  }
+
+  .ms-inner-container {
+    width: 90%;
+    height: 90%;
+  }
+
+  .ms-section {
+    width: 100%;
+    height: calc(100vh - 125px);
+    margin: 0 0 35px 0;
+  }
+}

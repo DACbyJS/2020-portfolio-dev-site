@@ -17,7 +17,14 @@
   }
 }
 
+@include media('<=tablet'){
+  .content {
+    padding-top: 78px
+  }
+}
+
 @import "multiscroll-sections/_base.scss";
 @import "multiscroll-sections/_text.scss";
+@import "multiscroll-sections/_links.scss";
 @import "multiscroll-sections/_svg-images.scss";
 @import "multiscroll-sections/_section-themes.scss";
