@@ -1,3 +1,6 @@
-@import '_normalize.scss';
-@import '_vars.scss';
-@import '_fonts.scss';
+@import 'normalize';
+@import 'vars';
+@import 'fonts';
+@import 'mixins';
+@import 'include-media';
+@import 'tool-classes';
