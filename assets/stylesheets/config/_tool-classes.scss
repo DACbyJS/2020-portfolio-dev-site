@@ -1,0 +1,11 @@
+@include media("<=tablet") {
+  .hide-on-tablet {
+    display: none;
+  }
+}
+
+@include media("<=phone") {
+  .hide-on-mobile {
+    display: none;
+  }
+}
