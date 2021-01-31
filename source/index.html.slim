@@ -5,59 +5,43 @@ title: Jakob Smith | Portfolio
 section class="content"
     div id="multiscroll" class="dark-blue"
         div class="ms-left"
+
             div class="ms-section"
-                = partial "partials/multiscroll-sections/multiscroll-section-template",\
-                :locals => {\
-                    :parent_container_css_class => "ms-content-container",\
-                    :inner_container_css_class => "ms-inner-container",\
-                    :h1_css_class => "large-title lettering-lines hello",\
-                    :image_url => "monogram-d",\
-                    :title_text => "Hello,<br/> my name is <br/> Jakob Smith"\
-                }
+                div class="ms-content-container"
+                    div class="ms-inner-container"
+                        = inline_svg("monogram-d")
+                        h1 class="large-title lettering-lines hello" Hello,<br/> my name is <br/> Jakob Smith
+
             div class="ms-section"
-                = partial "partials/multiscroll-sections/multiscroll-section-template",\
-                :locals => {\
-                    :parent_container_css_class => "ms-content-container",\
-                    :inner_container_css_class => "ms-inner-container",\
-                    :h1_css_class => "large-title lettering-lines code",\
-                    :image_url => "monogram-e",\
-                    :title_text => "I can code<br/> and style<br/> with or without<br/> a team."\
-                }
+                div class="ms-content-container"
+                    div class="ms-inner-container"
+                        = inline_svg("monogram-e")
+                        h1 class="large-title lettering-lines code" I can code<br/> and style<br/> with or without<br/> a team.
+
             div class="ms-section"
-                = partial "partials/multiscroll-sections/multiscroll-section-template",\
-                :locals => {\
-                    :parent_container_css_class => "ms-content-container",\
-                    :inner_container_css_class => "ms-inner-container",\
-                    :h1_css_class => "large-title lettering-lines design",\
-                    :image_url => "monogram-f",\
-                    :title_text => "I can design for<br/> and empathize with<br/> your client."\
-                }
+                div class="ms-content-container"
+                    div class="ms-inner-container"
+                        = inline_svg("monogram-f")
+                        h1 class="large-title lettering-lines design" I can design for<br/> and empathize with<br/> your client.
   
         div class="ms-right"
+
+            div class="ms-section hide-on-tablet"
+                div class="ms-content-container"
+                    div class="ms-inner-container"
+                        = inline_svg("monogram-d")
+                        h1 class="large-title lettering-lines about-me" Scroll Down<br/> to learn more<br/> about me.
+
             div class="ms-section"
-                = partial "partials/multiscroll-sections/multiscroll-section-template",\
-                :locals => {\
-                    :parent_container_css_class => "ms-content-container",\
-                    :inner_container_css_class => "ms-inner-container",\
-                    :h1_css_class => "large-title lettering-lines about-me",\
-                    :image_url => "monogram-d",\
-                    :title_text => "Scroll Down<br/> to learn more<br/> about me."\
-                }
+                div class="ms-content-container"
+                    div class="ms-inner-container"
+                        = inline_svg("monogram-e")
+                        a href="#"
+                            h1 class="large-title lettering-lines work link-color-change" See the work<br/> I've done.
+
             div class="ms-section"
-                = partial "partials/multiscroll-sections/multiscroll-section-template",\
-                :locals => {\
-                    :parent_container_css_class => "ms-content-container",\
-                    :inner_container_css_class => "ms-inner-container",\
-                    :h1_css_class => "large-title lettering-lines work",\
-                    :image_url => "monogram-e",\
-                    :title_text => "See the work<br/> I've done."\
-                }
-            div class="ms-section"
-                = partial "partials/multiscroll-sections/multiscroll-section-template",\
-                :locals => {\
-                    :parent_container_css_class => "ms-content-container",\
-                    :inner_container_css_class => "ms-inner-container",\
-                    :h1_css_class => "large-title lettering-lines look",\
-                    :image_url => "monogram-f",\
-                    :title_text => "See the look<br/> and feel I've<br/> created."\
-                }
+                div class="ms-content-container"
+                    div class="ms-inner-container"
+                        = inline_svg("monogram-f")
+                        a href="#"
+                            h1 class="large-title lettering-lines look link-color-change" See the look<br/> and feel I've<br/> created.
