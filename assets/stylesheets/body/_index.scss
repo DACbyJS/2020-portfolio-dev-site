@@ -5,3 +5,11 @@ html.no-multiscroll {
 body {
   background: #ffffff;
 }
+
+@include media('<=tablet'){
+  html.no-multiscroll,
+  body {
+    height: auto;
+    overflow-x: hidden;
+  }
+}
