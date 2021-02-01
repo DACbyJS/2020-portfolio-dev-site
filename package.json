@@ -27,6 +27,8 @@
     "webpack-cli": "^4.2.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@splidejs/splide": "^2.4.21",
     "jquery": "^3.5.1",
     "jquery-ui": "^1.12.1",
     "letteringjs": "^0.7.0",

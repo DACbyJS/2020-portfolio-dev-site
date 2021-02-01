@@ -1,0 +1,15 @@
+.splide {
+  width: 115%;
+  margin-left: -100px;
+  margin-bottom: -70px;
+}
+
+.splide__slide img {
+  width: 150%;
+  height: auto;
+  object-fit: contain;
+}
+
+.splide__slide img.slideslow {
+  animation: slideslow 14.5s 1;
+}

@@ -1,0 +1,61 @@
+.inner-container {
+  background-color: $darkWhiteBg;
+  height: 100%;
+  padding: 78px 5% 5% 5%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.port-row {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 5% 0 10% 0;
+  z-index: 2
+}
+
+.port-row-left {
+  flex: 0 1 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .inner-port-row-bottom {
+    background-color: $darkBlueSectionBg;
+    margin: 1em 1em 0 0;
+    padding: 1em;
+    z-index: 3;
+  }
+
+  .ipr-bottom-column {
+    display: flex;
+    flex-flow: row wrap;
+    border: 4px double $darkBlueSectionAccent;
+    padding: 1em;
+
+    .iprbc-top-left {
+      flex: 0 1 50%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+
+    .iprbc-top-right {
+      flex: 0 1 50%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+
+    .iprbc-bottom {
+      flex: 0 1 100%;
+      margin-top: 0.5em;
+      display: inline;
+    }
+  }
+}
+
+.port-row-right {
+  flex: 0 1 50%;
+  position: relative;
+}

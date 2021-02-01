@@ -23,8 +23,20 @@
   }
 }
 
+/* Home Page */
 @import "multiscroll-sections/_base.scss";
 @import "multiscroll-sections/_text.scss";
 @import "multiscroll-sections/_links.scss";
 @import "multiscroll-sections/_svg-images.scss";
 @import "multiscroll-sections/_section-themes.scss";
+
+/*Portfolio*/
+.portfolio {
+  overflow-y: visible;
+  overflow-x: hidden;
+
+  @import "portfolio/base";
+  @import "portfolio/text";
+  @import "portfolio/slider";
+  @import "portfolio/svg-images"
+}

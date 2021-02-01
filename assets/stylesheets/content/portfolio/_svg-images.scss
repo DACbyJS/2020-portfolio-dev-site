@@ -1,0 +1,20 @@
+.svg-border-container {
+  position: absolute;
+  height: 100%;
+  width: 95%;
+  transform: rotate(90deg);
+  left: -468px;
+  top: 35px;
+}
+
+.monogram-multi-path-group g path {
+  fill: $darkBlueSectionAccent !important; //overrides inline fill
+}
+
+.monogram-multi-circle-group g circle {
+  fill: $darkBlueSectionAccent !important; //overrides inline fill
+}
+
+.monogram-multi-ellipse-group g ellipse {
+  fill: $darkBlueSectionAccent !important; //overrides inline fill
+}
