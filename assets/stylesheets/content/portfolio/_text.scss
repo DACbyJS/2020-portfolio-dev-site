@@ -5,7 +5,6 @@ h1.port-title {
   letter-spacing: -0.03em;
   font-style: normal;
   text-rendering: optimizeLegibility;
-  text-transform: capitalize;
   margin: 0;
   display: flex;
   flex-flow: column nowrap;
@@ -14,11 +13,11 @@ h1.port-title {
 }
 
 .iprbc-top-left h2 {
-    margin: 0 1em 0 0;
+  margin: 0 1em 0 0;
 }
 
 .iprbc-top-right h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .iprbc-top-left h2,
@@ -64,12 +63,29 @@ h1.port-title {
   font-size: 3ch;
   display: inline-block;
   font-family: "Blackriver";
-  color: #b68b3e;
+  color: $darkBlueSectionAccent;
   line-height: 1;
   margin-right: 3px;
   margin-top: 0.6em;
 }
 
+.ex-site-link {
+  display: block;
+  position: relative;
+  font-family: Lora;
+  margin: 1em 0 0.4em 0;
+  text-decoration: underline;
+  color: $darkBlueSectionAccent;
+  width: auto;
+  transition: 0.3s ease-in-out;
+}
+
+.ex-site-link:hover {
+  letter-spacing: 0.3px;
+  color: $darkBlueSectionText;
+}
+
+/* Hotel Andaluz */
 .ha > .line1 {
   font-size: 5.3ch;
 }
@@ -78,4 +94,15 @@ h1.port-title {
   font-size: 5.5ch;
   margin-left: 0.5em;
   margin-top: -0.2em;
+}
+
+/* La Rodadora */
+.lr > .line1 {
+  font-size: 5.3ch;
+}
+
+.lr > .line2 {
+  font-size: 5.5ch;
+  margin-left: 0.5em;
+  margin-top: 0;
 }

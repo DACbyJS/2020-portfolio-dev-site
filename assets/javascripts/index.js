@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
       lazyLoad: "nearby",
       rewind: true,
       rewindSpeed: 3000,
+      pauseOnHover: false,
+      pauseOnFocus: false
     }).mount();
 
     aSplide.on("active", function (s) {

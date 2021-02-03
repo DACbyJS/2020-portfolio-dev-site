@@ -14,7 +14,7 @@
 }
 
 .port-row-left {
-  flex: 0 1 50%;
+  flex: 0 0 40%;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
@@ -56,6 +56,8 @@
 }
 
 .port-row-right {
-  flex: 0 1 50%;
+  flex: 0 1 60%;
   position: relative;
+  margin-left: -100px;
+  margin-bottom: -70px;
 }
