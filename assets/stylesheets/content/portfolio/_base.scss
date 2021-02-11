@@ -10,7 +10,7 @@
   display: flex;
   flex-flow: row nowrap;
   padding: 5% 0 10% 0;
-  z-index: 2
+  z-index: 2;
 }
 
 .port-row-left {
@@ -60,4 +60,8 @@
   position: relative;
   margin-left: -100px;
   margin-bottom: -70px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
