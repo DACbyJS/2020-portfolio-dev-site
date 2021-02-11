@@ -1,3 +1,4 @@
+/* Responsive Visiblity Toggle */
 @include media("<=tablet") {
   .hide-on-tablet {
     display: none;
@@ -10,6 +11,8 @@
   }
 }
 
+
+/* CSS frame Animations */
 @keyframes slideslow {
   0% {
     transform: translate3d(0px, 0px, 0px);
@@ -46,6 +49,7 @@
   }
 }
 
+/* Button Animations */
 .border-switch a {
   position: relative;
   display: inline-block;

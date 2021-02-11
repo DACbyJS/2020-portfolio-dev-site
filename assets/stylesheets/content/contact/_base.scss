@@ -11,12 +11,18 @@
   flex-flow: row nowrap;
   padding: 5% 0 10% 0;
   z-index: 2;
+  align-items: center;
+
+  .inner-port-row-top {
+    flex: 0 1 30%;
+  }
 
   .inner-port-row-bottom {
     background-color: $darkBlueSectionBg;
     margin: 1em 1em 0 0;
     padding: 1em;
     z-index: 3;
+    flex: 0 1 70%;
   }
 
   .ipr-bottom-column {
@@ -30,6 +36,7 @@
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
+      align-items: center;
     }
 
     .iprbc-top-right {
@@ -37,6 +44,7 @@
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
+      align-items: center;
     }
 
     .iprbc-bottom {
@@ -47,30 +55,51 @@
   }
 }
 
-@include media("<1280px") {
+@include media("<desktop") {
   .port-row {
     flex-flow: column nowrap;
-    align-items: flex-end;
-    padding: 5% 0 20%;
+    padding: 5% 0 5%;
     .inner-port-row-bottom {
-      margin: 0em 0em 1em 3em;
+      margin: 2em 0 0 0;
     }
   }
 }
 
 @include media("<tablet") {
   .port-row {
-    padding: 5% 0 30%;
-  }
-  .port-row-left {
-    flex-flow: column nowrap;
-    .inner-port-row-bottom {
-      margin: 1em 0;
+    padding: 5% 0 15%;
+
+    .ipr-bottom-column {
+      .iprbc-top-left h2 {
+        margin: 0.2em 0 0.5em 0;
+      }
+
+      .iprbc-top-left,
+      .iprbc-top-right {
+        flex: 0 1 100%;
+        flex-flow: column nowrap;
+        justify-content: center;
+        .svg-inline--fa {
+          margin-right: 0;
+        }
+      }
+
+      .iprbc-bottom {
+        margin-top: 0;
+      }
     }
-  }
-  .inner-port-row-top {
-    h1.port-title {
-      font-size: 3.5vw;
+
+    .port-row-left {
+      flex-flow: column nowrap;
+      .inner-port-row-bottom {
+        margin: 1em 0;
+      }
+    }
+
+    .inner-port-row-top {
+      h1.port-title {
+        font-size: 3.5vw;
+      }
     }
   }
 }
