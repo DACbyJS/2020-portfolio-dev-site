@@ -4,6 +4,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
+  mode: "development",
   entry: {
     site: ["./assets/javascripts/index.js", "./assets/stylesheets/index.scss"],
   },
