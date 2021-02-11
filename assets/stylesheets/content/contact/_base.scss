@@ -1,0 +1,76 @@
+.inner-container {
+  background-color: $darkWhiteBg;
+  height: 100%;
+  padding: 78px 5% 5% 5%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.port-row {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 5% 0 10% 0;
+  z-index: 2;
+
+  .inner-port-row-bottom {
+    background-color: $darkBlueSectionBg;
+    margin: 1em 1em 0 0;
+    padding: 1em;
+    z-index: 3;
+  }
+
+  .ipr-bottom-column {
+    display: flex;
+    flex-flow: row wrap;
+    border: 4px double $darkBlueSectionAccent;
+    padding: 1em;
+
+    .iprbc-top-left {
+      flex: 0 1 50%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+
+    .iprbc-top-right {
+      flex: 0 1 50%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+
+    .iprbc-bottom {
+      flex: 0 1 100%;
+      margin-top: 0.5em;
+      display: inline;
+    }
+  }
+}
+
+@include media("<1280px") {
+  .port-row {
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    padding: 5% 0 20%;
+    .inner-port-row-bottom {
+      margin: 0em 0em 1em 3em;
+    }
+  }
+}
+
+@include media("<tablet") {
+  .port-row {
+    padding: 5% 0 30%;
+  }
+  .port-row-left {
+    flex-flow: column nowrap;
+    .inner-port-row-bottom {
+      margin: 1em 0;
+    }
+  }
+  .inner-port-row-top {
+    h1.port-title {
+      font-size: 3.5vw;
+    }
+  }
+}

@@ -14,26 +14,105 @@
   0% {
     transform: translate3d(0px, 0px, 0px);
     animation-timing-function: linear;
-    opacity: 0
+    opacity: 0;
   }
   15% {
-    opacity: 1
+    opacity: 1;
   }
   80% {
-    opacity: 1
+    opacity: 1;
   }
   100% {
     transform: translate3d(-250px, 0px, 0px);
-    opacity: 0
+    opacity: 0;
   }
 }
 
 @keyframes fade-out {
-  from { opacity: 1 }
-    to { opacity: 0 }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fade-in {
-  from { opacity: 0 }
-    to { opacity: 1 }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.border-switch a {
+  position: relative;
+  display: inline-block;
+  margin: 15px 25px;
+  outline: none;
+  text-decoration: none;
+  padding: 0 20px;
+  height: 45px;
+  line-height: 45px;
+}
+
+.border-switch a::before,
+.border-switch a::after {
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  background: $darkBlueSectionAccent;
+  content: "";
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.border-switch a::before {
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.border-switch a::after {
+  right: 0;
+  bottom: 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 100% 0;
+  -moz-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+
+.border-switch a:hover::before,
+.border-switch a:hover::after,
+.border-switch a:focus::before,
+.border-switch a:focus::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.border-switch a:hover::before,
+.border-switch a:focus::before {
+  left: 50%;
+  -webkit-transform: rotate(0deg) translateX(-50%);
+  -moz-transform: rotate(0deg) translateX(-50%);
+  transform: rotate(0deg) translateX(-50%);
+}
+
+.border-switch a:hover::after,
+.border-switch a:focus::after {
+  right: 50%;
+  -webkit-transform: rotate(0deg) translateX(50%);
+  -moz-transform: rotate(0deg) translateX(50%);
+  transform: rotate(0deg) translateX(50%);
 }

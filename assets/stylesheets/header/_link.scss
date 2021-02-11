@@ -1,0 +1,15 @@
+.link-container {
+    flex: 0 0 auto;
+
+    .header-link {
+        font-family: "Lora";
+        color: $darkBlueSectionBg;
+        font-weight: 700;
+    }
+}
+
+@include media("<tablet"){
+    .link-container{
+        display: none;
+    }
+}

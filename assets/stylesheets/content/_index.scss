@@ -17,9 +17,9 @@
   }
 }
 
-@include media('<=tablet'){
+@include media("<=tablet") {
   .content {
-    padding-top: 78px
+    padding-top: 78px;
   }
 }
 
@@ -38,5 +38,11 @@
   @import "portfolio/base";
   @import "portfolio/text";
   @import "portfolio/slider";
-  @import "portfolio/svg-images"
+  @import "portfolio/svg-images";
+}
+
+/* Contact and About */
+.contact {
+  @import "contact/base";
+  @import "contact/text";
 }
