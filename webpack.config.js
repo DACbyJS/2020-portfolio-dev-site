@@ -1,35 +1,31 @@
-const path = require('path');
-const miniCssPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const path = require("path");
+const miniCssPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  mode: "development",
   entry: {
-    site: [
-      './assets/javascripts/index.js',
-      './assets/stylesheets/index.scss'
-    ]
+    site: ["./assets/javascripts/index.js", "./assets/stylesheets/index.scss"],
   },
   output: {
-    filename: 'assets/javascripts/[name].js',
-    path: path.resolve(__dirname, '.tmp/dist')
+    filename: "assets/javascripts/[name].js",
+    path: path.resolve(__dirname, ".tmp/dist"),
   },
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: [miniCssPlugin.loader, 'css-loader', 'sass-loader']
+        use: [miniCssPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         test: /\.css$/,
-        use: [miniCssPlugin.loader, 'css-loader']
+        use: [miniCssPlugin.loader, "css-loader"],
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        use: ['url-loader?limit=100000']
-      }
-    ]
+        use: ["url-loader?limit=100000"],
+      },
+    ],
   },
   optimization: {
     minimize: true,
@@ -37,7 +33,7 @@ module.exports = {
       new CssMinimizerPlugin({
         minimizerOptions: {
           preset: [
-            'default',
+            "default",
             {
               discardComments: { removeAll: true },
             },
@@ -48,17 +44,17 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'jquery': path.resolve(path.join(__dirname, 'node_modules', 'jquery'))
+      jquery: path.resolve(path.join(__dirname, "node_modules", "jquery")),
     },
   },
   plugins: [
     new miniCssPlugin({
-      filename: 'assets/stylesheets/[name].css'
+      filename: "assets/stylesheets/[name].css",
     }),
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
-    })
-  ]
-}
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery",
+    }),
+  ],
+};
