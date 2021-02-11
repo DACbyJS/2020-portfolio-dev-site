@@ -13,6 +13,8 @@ html
     == javascript_include_tag :site
 
   body class="#{page_classes}"
+    svg id="fader"
+    script function fadeInPage() {if (!window.AnimationEvent) {return;} var fader = document.getElementById("fader"); fader.classList.add("fade-out");} fadeInPage();
     == partial "partials/header"
     == yield
     == partial "partials/footer"

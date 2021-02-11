@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       rewind: true,
       rewindSpeed: 3000,
       pauseOnHover: false,
-      pauseOnFocus: false
+      pauseOnFocus: false,
     }).mount();
 
     aSplide.on("active", function (s) {
@@ -44,5 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+import "./fade-load.js";
 import "./multiscroll-init.js";
 import "./lettering-init.js";
