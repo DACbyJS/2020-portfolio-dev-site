@@ -1,19 +1,36 @@
-$(window).on("load", function () {
-  if ($(window).width() <= 768) {
-    $("html").toggleClass("no-multiscroll");
-    return false;
-  }
+function initMultiScroll() {
 
   let isHomePage = $("body").hasClass("index");
 
   if (!isHomePage) {
-    $("html").toggleClass("no-multiscroll");
-    return false;
+    noMultiScroll();
+    return;
   }
 
   $("#multiscroll").multiscroll({
     scrollingSpeed: 1000,
     easing: "easeOutSine",
-    paddingTop: "78px",
+    paddingTop: "78px"
   });
+
+  return;
+}
+
+function noMultiScroll() {
+  $("html").addClass("no-multiscroll");
+  return;
+}
+
+$(document).on("DOMContentLoaded", function () {
+  if ($(window).width() > 768) {
+    initMultiScroll();
+  } else {
+    noMultiScroll();
+  }
+});
+
+$(window).on("resize", function () {
+  if ($(window).width() < 768) {
+    location.reload();
+  }
 });

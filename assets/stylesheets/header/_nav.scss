@@ -41,6 +41,10 @@
       text-transform: capitalize;
       transition: $transition-duration, opacity 0.1s;
 
+      &:hover {
+        color: $darkBlueSectionAccent !important;
+      }
+
       // Setting delays for the nav items in open transition
       @for $i from 1 through $navItems {
         &:nth-child(#{$i}) {

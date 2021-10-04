@@ -1,3 +1,3 @@
-$(window).on("load", function () {
-    new Splide( '.splide' ).mount();
-}
+$(document).on("DOMContentLoaded", function () {
+    new Splide('.splide').mount();
+});
