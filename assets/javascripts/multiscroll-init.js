@@ -1,5 +1,4 @@
 function initMultiScroll() {
-
   let isHomePage = $("body").hasClass("index");
 
   if (!isHomePage) {
@@ -10,7 +9,7 @@ function initMultiScroll() {
   $("#multiscroll").multiscroll({
     scrollingSpeed: 1000,
     easing: "easeOutSine",
-    paddingTop: "78px"
+    paddingTop: "78px",
   });
 
   return;
@@ -26,11 +25,5 @@ $(document).on("DOMContentLoaded", function () {
     initMultiScroll();
   } else {
     noMultiScroll();
-  }
-});
-
-$(window).on("resize", function () {
-  if ($(window).width() < 768) {
-    location.reload();
   }
 });
