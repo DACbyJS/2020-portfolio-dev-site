@@ -1,0 +1,14 @@
+.footer {
+    position: relative;
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 25px;
+        background-color: #04293b;
+        color: orange;
+        font-size: 1.25rem;
+        z-index: 10;
+        padding: 1rem 1.2rem;
+        cursor: pointer;
+    }
+}
