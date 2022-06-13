@@ -32,6 +32,7 @@
     "jquery-ui": "^1.12.1",
     "letteringjs": "^0.7.0",
     "lodash": "^4.17.21",
-    "multiscroll.js": "^0.2.2"
+    "multiscroll.js": "^0.2.2",
+    "shufflejs": "^6.0.0"
   }
 }
