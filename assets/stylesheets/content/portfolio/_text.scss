@@ -1,5 +1,5 @@
 h1.port-title {
-  font-family: "Blackriver";
+  font-family: 'Blackriver';
   line-height: 1.3;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -22,7 +22,7 @@ h1.port-title {
 
 .iprbc-top-left h2,
 .iprbc-top-right h2 {
-  font-family: "Playfair-Display";
+  font-family: 'Playfair-Display';
   line-height: 1.3;
   font-weight: 400;
   letter-spacing: -0.1px;
@@ -62,7 +62,7 @@ h1.port-title {
 .iprbc-bottom .dropcap {
   font-size: 3ch;
   display: inline-block;
-  font-family: "Blackriver";
+  font-family: 'Blackriver';
   color: $darkBlueSectionAccent;
   line-height: 1;
   margin-right: 3px;
@@ -107,7 +107,6 @@ h1.port-title {
   margin-top: 0;
 }
 
-
 /* Inn on the Alameda */
 .iota > .line1 {
   font-size: 5.3ch;
@@ -146,4 +145,15 @@ h1.port-title {
   font-size: 5ch;
   margin-top: -0.1em;
   margin-left: 0.2em;
+}
+
+/* Sunvista */
+.sunvista > .line1 {
+  font-size: 5.3ch;
+}
+
+.sunvista > .line2 {
+  font-size: 5.3ch;
+  margin-top: 0.1em;
+  margin-left: 0.3em;
 }
