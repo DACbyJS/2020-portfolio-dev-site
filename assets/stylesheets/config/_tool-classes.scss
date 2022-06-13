@@ -120,3 +120,34 @@
   -moz-transform: rotate(0deg) translateX(50%);
   transform: rotate(0deg) translateX(50%);
 }
+
+/* Button Effect: bottom line slides/fades in */
+.bottom-border-slide-in button {
+  position: relative;
+}
+
+.bottom-border-slide-in button::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: $darkBlueSectionAccent;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.bottom-border-slide-in button:hover::after,
+.bottom-border-slide-in button:focus::after,
+.bottom-border-slide-in button.active::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
