@@ -96,7 +96,9 @@
 
 @include media("<tablet") {
   .port-row {
-    padding: 5% 0 35%;
+    padding: 5rem 5%;
+    margin: 0 auto;
+    width: 90%;
   }
   .port-row-left {
     flex-flow: column nowrap;

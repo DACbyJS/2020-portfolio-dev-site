@@ -129,9 +129,9 @@
 .bottom-border-slide-in button::after {
 	position: absolute;
 	top: 100%;
-	left: 0;
-	width: 100%;
-	height: 4px;
+	left: 10%;
+	width: 80%;
+	height: 2px;
 	background: $darkBlueSectionAccent;
 	content: '';
 	opacity: 0;

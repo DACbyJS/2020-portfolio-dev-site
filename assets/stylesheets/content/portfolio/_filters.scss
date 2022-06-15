@@ -31,3 +31,8 @@
     }
 }
 
+@include media("<tablet") {
+    .filters-container {
+        padding: 30px 0 1% 0;
+    }
+}
