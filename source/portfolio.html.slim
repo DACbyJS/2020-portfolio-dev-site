@@ -12,6 +12,8 @@ section class="content"
             button class="filter-option" data-group="advocacy" Advocacy
             button class="filter-option" data-group="agency" Agency
             button class="filter-option" data-group="communication" Communication
+            button class="filter-option" data-group="consumer" Consumer Goods
+            button class="filter-option" data-group="ecomm" E-Commerce
             button class="filter-option" data-group="education" Education 
             button class="filter-option" data-group="entertainment" Entertainment
             button class="filter-option" data-group="hotel" Hotel
@@ -25,6 +27,8 @@ section class="content"
 
 
     div id="portfolio-shuffle-container" class="inner-container"
+        / Shuffle.js Sizer
+        div class="port-row-sizer"
 
         / Hotel Andaluz
         div class="port-row" data-groups="[&quot;hospitality&quot;, &quot;hotel&quot;]"
@@ -135,7 +139,7 @@ section class="content"
                                 img data-splide-lazy="/images/peacock-law-2.jpg"
 
         / La Rodadora   
-        div class="port-row" data-groups="[&quot;entertainment&quot;, &quot;education&quot;]"
+        div class="port-row" data-groups="[&quot;entertainment&quot;, &quot;education&quot;, &quot;ecomm&quot;]"
 
             div class="port-row-left"
 
@@ -171,7 +175,7 @@ section class="content"
                                 img data-splide-lazy="/images/laro-3.jpg"
 
         / Inn on the Alameda  
-        div class="port-row" data-groups="[&quot;hospitality&quot;]"
+        div class="port-row" data-groups="[&quot;hospitality&quot;, &quot;ecomm&quot;]"
 
             div class="port-row-left"
 
@@ -419,3 +423,39 @@ section class="content"
                                 img data-splide-lazy="/images/sunvista-2.png"
                             li class="splide__slide"
                                 img data-splide-lazy="/images/sunvista-3.png"
+
+        / The Firebird
+        div class="port-row" data-groups="[&quot;consumer&quot;, &quot;ecomm&quot;]"
+
+            div class="port-row-left"
+
+                div class="inner-port-row-top"
+                    h1 class="lettering-lines port-title firebird" The <br/>Firebird
+
+                div class="inner-port-row-bottom"
+                    div class="ipr-bottom-column"
+                        span class="iprbc-top-left" 
+                            i class="fas fa-code"
+                            h2 back-end | front-end
+                        span class="iprbc-top-right"
+                            i class="fas fa-people-carry"
+                            h2 solo | consultant
+                        span class="iprbc-bottom"
+                            span class="dropcap" T
+                            p his project was a complex redesign tasked with migrating an old outdated site to a new one and in turn, importing product data into an e-Commerce platform for the first time. I learned a lot about content/data organization and how careful code organization can allow for re-use and speed. Notable features are a custom backend that allowed for sorting, filtering and CRUD operations on product data, plus page building alongside three unique color schemes with rudimentary customization.
+                            a class="ex-site-link" href="https://thefirebird.com/" target="_blank" see the site
+
+            div class="port-row-right"
+
+                div class="svg-border-container"
+                    = inline_svg("monogram-border")
+
+                div class="splide"
+                    div class="splide__track"  
+                        ul class="splide__list"
+                            li class="splide__slide"
+                                img data-splide-lazy="/images/thefirebird-1.png"
+                            li class="splide__slide"
+                                img data-splide-lazy="/images/thefirebird-2.png"
+                            li class="splide__slide"
+                                img data-splide-lazy="/images/thefirebird-3.png"

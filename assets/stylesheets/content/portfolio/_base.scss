@@ -95,10 +95,16 @@
 }
 
 @include media("<tablet") {
+  .inner-container {
+    height: 100%;
+    justify-content: space-between;
+  }
+
   .port-row {
-    padding: 5rem 5%;
-    margin: 0 auto;
+    padding: 5%;
+    margin: 5rem auto;
     width: 90%;
+    height: auto;
   }
   .port-row-left {
     flex-flow: column nowrap;

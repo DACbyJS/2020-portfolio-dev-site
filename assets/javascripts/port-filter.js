@@ -6,6 +6,7 @@ class PortfolioFilter {
 
     this.shuffle = new Shuffle(element, {
       itemSelector: '.port-row',
+      speed: 500,
       gutterWidth: 50,
     });
 
@@ -53,6 +54,7 @@ class PortfolioFilter {
     }
 
     this.shuffle.filter(filterGroup);
+    this.shuffle.layout();
   }
 }
 
